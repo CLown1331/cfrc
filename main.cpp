@@ -5,6 +5,7 @@
 #include <unistd.h>
 
 int main(int argc, char** argv) {
+    std::string username = "CLown1331";
     cpr::Response r = cpr::Get(cpr::Url{"https://codeforces.com/api/user.rating?handle=" + username});
     if (r.status_code != 200) {
         return -1;
